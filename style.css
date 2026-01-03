@@ -1,10 +1,27 @@
+/* ----------------------
+   GENERAL STYLES
+----------------------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f4f6f8;
     color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
+a {
+    color: #0a192f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------
+   HERO SECTION
+----------------------- */
 .hero {
     background: #0a192f;
     color: white;
@@ -12,8 +29,31 @@ body {
     padding: 60px 20px;
 }
 
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.hero .tagline {
+    font-style: italic;
+    color: #ccd6f6;
+    margin-top: 10px;
+}
+
+/* ----------------------
+   SECTIONS
+----------------------- */
 section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     max-width: 900px;
     margin: auto;
 }
@@ -24,27 +64,138 @@ h3 {
     margin-bottom: 20px;
 }
 
-ul {
-    list-style: square;
+/* ----------------------
+   ABOUT SECTION
+----------------------- */
+#about ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
 }
 
-.project {
-    background: white;
+/* ----------------------
+   SKILLS SECTION
+----------------------- */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #0a192f;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #112240;
+}
+
+/* ----------------------
+   PROJECT CARDS
+----------------------- */
+.project-card {
+    background: #fff;
     padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project a {
-    color: #0a192f;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.project-card h4 {
+    margin: 0 0 5px 0;
+}
+
+/* ----------------------
+   CONTACT / CV BUTTON
+----------------------- */
+.cv-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0a192f;
+    color: #fff;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
+.cv-btn:hover {
+    background: #112240;
+    transform: translateY(-2px);
+}
+
+/* ----------------------
+   FOOTER
+----------------------- */
 footer {
     text-align: center;
     padding: 20px;
     background: #0a192f;
     color: white;
+}
+
+/* ----------------------
+   RESPONSIVE
+----------------------- */
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ----------------------
+   LIGHT / DARK MODE (Optional)
+----------------------- */
+body.dark-mode {
+    background: #0a192f;
+    color: #ccd6f6;
+}
+
+body.dark-mode .hero {
+    background: #112240;
+    color: #ccd6f6;
+}
+
+body.dark-mode .skill {
+    background: #ccd6f6;
+    color: #0a192f;
+}
+
+body.dark-mode .project-card {
+    background: #112240;
+    color: #ccd6f6;
+}
+
+body.dark-mode .project-card a {
+    color: #fff;
+}
+
+body.dark-mode .cv-btn {
+    background: #ccd6f6;
+    color: #0a192f;
+}
+
+body.dark-mode footer {
+    background: #112240;
+    color: #ccd6f6;
 }
