@@ -6,7 +6,7 @@ body {
     margin: 0;
     background: #f4f6f8;
     color: #333;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 a {
@@ -49,6 +49,23 @@ a:hover {
     margin-top: 10px;
 }
 
+.dark-mode-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #ccd6f6;
+    color: #0a192f;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
 /* ----------------------
    SECTIONS
 ----------------------- */
@@ -80,14 +97,15 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .skill {
     background: #0a192f;
     color: #fff;
-    padding: 6px 12px;
+    padding: 8px 16px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
     cursor: default;
 }
@@ -102,16 +120,16 @@ h3 {
 ----------------------- */
 .project-card {
     background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
     border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 .project-card h4 {
@@ -124,7 +142,7 @@ h3 {
 .cv-btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 10px 22px;
     background: #0a192f;
     color: #fff;
     border-radius: 6px;
@@ -154,6 +172,7 @@ footer {
 @media (max-width: 600px) {
     .skills-container {
         flex-direction: column;
+        align-items: center;
     }
     .hero h1 {
         font-size: 1.8rem;
@@ -164,7 +183,7 @@ footer {
 }
 
 /* ----------------------
-   LIGHT / DARK MODE (Optional)
+   DARK MODE
 ----------------------- */
 body.dark-mode {
     background: #0a192f;
