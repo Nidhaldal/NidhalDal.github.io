@@ -1,185 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Nidhal Dalhoumi | Software Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nidhal Dalhoumi | Software Engineer</title>
+
+    <meta
+        name="description"
+        content="Nidhal Dalhoumi — Junior Software Engineer specializing in full-stack development, backend systems, AI integration, and DevOps."
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- =========================================================
+     HERO
+========================================================= -->
+
 <header class="hero">
-    <img src="assets/profile.jpg" alt="Nidhal Dalhoumi" class="profile-pic">
 
-    <h1>Nidhal Dalhoumi</h1>
+    <div class="hero-container">
 
-    <h2>Software Engineer | Full-Stack & Systems / Backend Engineer</h2>
+        <img
+            src="assets/profile.jpg"
+            alt="Nidhal Dalhoumi"
+            class="profile-pic"
+        >
 
-    <p>C • Python • Linux • Backend Systems • Real-Time Software</p>
+        <h1>Nidhal Dalhoumi</h1>
 
-    <p class="tagline">
-        I build scalable software systems that transform business requirements into reliable backend architectures, workflow-based platforms, and data-driven applications.
-    </p>
+        <h2>
+            Software Engineer | Full-Stack, Backend & AI
+        </h2>
 
-    <button onclick="toggleDarkMode()" class="dark-mode-btn">🌙 Toggle Dark Mode</button>
+        <p class="tech-stack-line">
+            Python • TypeScript • Angular • Django • Spring Boot • PostgreSQL • Docker
+        </p>
+
+        <p class="tagline">
+            Driven Junior Software Engineer with hands-on experience building
+            full-stack applications, backend services, real-time systems,
+            AI integrations, and automated development workflows.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="assets/Nidhal_Dalhoumi_CV.pdf"
+                class="btn primary-btn"
+                target="_blank"
+                rel="noopener"
+            >
+                📄 View Resume
+            </a>
+
+            <button
+                onclick="toggleDarkMode()"
+                class="btn dark-mode-btn"
+                aria-label="Toggle dark mode"
+            >
+                🌙 Toggle Dark Mode
+            </button>
+
+        </div>
+
+    </div>
+
 </header>
 
-<!-- ABOUT -->
-<section id="about">
-    <h3>About Me</h3>
+
+<main class="container">
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about" class="section">
+
+    <h3 class="section-title">
+        About Me
+    </h3>
 
     <p>
-    Software Engineer with a strong foundation in programming, algorithms, backend systems, Linux, and software debugging.
-    Experienced in building real-time applications, backend services, and automated development workflows. 
-    Interested in systems engineering, low-level software, and exploring the intersection between software and hardware.
+        Software Engineer specializing in full-stack web applications,
+        backend services, and data/AI integrations. Experienced in building
+        RESTful applications using Angular, Django, and Spring Boot, with
+        hands-on experience in Docker, CI/CD automation, Linux, and AWS S3.
     </p>
 
-    <ul>
-        <li>Built full-stack ERP, BI, and workflow-based systems</li>
-        <li>Designed backend architectures and REST APIs for scalable applications</li>
-        <li>Translated business requirements into functional and technical system designs</li>
-        <li>Developed data visualization dashboards and reporting systems</li>
-        <li>Worked with CI/CD pipelines and DevOps automation tools</li>
+    <p>
+        I enjoy understanding how software works beyond individual features —
+        from data and APIs to system integration, deployment, debugging,
+        and reliability. I approach engineering with a strong analytical
+        mindset and a continuous-learning mentality.
+    </p>
+
+    <ul class="about-highlights">
+
+        <li>
+            <strong>Full-Stack Development:</strong>
+            End-to-end development using Angular, Django REST Framework,
+            and Spring Boot.
+        </li>
+
+        <li>
+            <strong>Backend & APIs:</strong>
+            RESTful API development, authentication, business workflows,
+            relational data modeling, and system integration.
+        </li>
+
+        <li>
+            <strong>AI Integration:</strong>
+            Computer vision integration using YOLO within full-stack
+            application workflows.
+        </li>
+
+        <li>
+            <strong>DevOps & Quality:</strong>
+            Docker, CI/CD automation, Linux, Jenkins, GitHub Actions,
+            SonarQube, Prometheus, and Grafana.
+        </li>
+
     </ul>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-    <h3>Skills</h3>
-
-    <div class="skills-container">
-        <!-- Programming & Core Engineering -->
-        <span class="skill">C</span>
-        <span class="skill">C++ (Developing)</span>
-        <span class="skill">Java</span>
-        <span class="skill">Python</span>
-        <span class="skill">Algorithms & Data Structures</span>
-        <span class="skill">Object-Oriented Programming</span>
-        <span class="skill">Debugging</span>
-
-        <!-- Systems & Development -->
-        <span class="skill">Linux</span>
-        <span class="skill">Bash</span>
-        <span class="skill">Git</span>
-        <span class="skill">Software Architecture</span>
-        <span class="skill">System Integration</span>
-
-        <!-- Digital Design & FPGA -->
-        <span class="skill">Verilog (Learning)</span>
-        <span class="skill">SystemVerilog (Learning)</span>
-        <span class="skill">RTL Design (Learning)</span>
-        <span class="skill">FPGA Fundamentals (Learning)</span>
-        <span class="skill">Vivado (Learning)</span>
-
-        <!-- Backend & Real-Time Systems -->
-        <span class="skill">Spring Boot</span>
-        <span class="skill">Django</span>
-        <span class="skill">REST APIs</span>
-        <span class="skill">WebSockets</span>
-
-        <!-- Databases -->
-        <span class="skill">SQL</span>
-        <span class="skill">PostgreSQL</span>
-        <span class="skill">MySQL</span>
-        <span class="skill">Redis</span>
-
-        <!-- DevOps & Quality -->
-        <span class="skill">Docker</span>
-        <span class="skill">CI/CD</span>
-        <span class="skill">Jenkins</span>
-        <span class="skill">GitHub Actions</span>
-        <span class="skill">SonarQube</span>
-        <span class="skill">Prometheus</span>
-        <span class="skill">Grafana</span>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h3>Projects</h3>
-
-    <div class="project-card">
-        <h4>AI-Powered Medical Workflow Platform</h4>
-        <p><strong>Angular • Django • WebSockets • YOLO</strong></p>
-
-        <p>
-            Full-stack system combining clinical workflows, real-time communication, and AI-assisted medical image analysis.
-            Designed Angular/Django architecture and integrated a YOLO-based model for decision support in clinical processes.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h4>Business Intelligence & ERP System</h4>
-        <p><strong>Angular • Django • SQL • Data Systems</strong></p>
-
-        <p>
-            Enterprise-style BI and ERP system for operational reporting and workflow optimization.
-            Designed backend processing logic, data workflows, and interactive dashboards enabling structured business decision-making.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h4>Marketplace & Matching Platform</h4>
-        <p><strong>Angular • Spring Boot • Java</strong></p>
-
-        <p>
-            Full-stack platform for structured user workflows such as housing and carpooling.
-            Built REST APIs and Angular interfaces with authentication, business logic, and scalable backend design.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h4>DevOps CI/CD Pipeline</h4>
-        <p><strong>Jenkins • Docker • SonarQube • Prometheus • Grafana</strong></p>
-
-        <p>
-            Implemented CI/CD pipelines with automated build, testing, and deployment workflows.
-            Added code quality validation and system monitoring for containerized applications.
-        </p>
-    </div>
 
 </section>
 
-<!-- FOCUS -->
-<section>
-    <h3>Focus Areas</h3>
+
+<!-- =========================================================
+     TECHNICAL SKILLS
+========================================================= -->
+
+<section id="skills" class="section">
+
+    <h3 class="section-title">
+        Technical Skills
+    </h3>
+
+    <div class="skills-grid">
+
+
+        <!-- LANGUAGES & FRAMEWORKS -->
+
+        <div class="skill-category">
+
+            <h4>
+                Languages & Frameworks
+            </h4>
+
+            <div class="skill-tags">
+
+                <span class="skill">TypeScript</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">C / C++</span>
+
+                <span class="skill">Angular</span>
+                <span class="skill">Django</span>
+                <span class="skill">Spring Boot</span>
+
+                <span class="skill">REST APIs</span>
+                <span class="skill">OOP</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- DEVOPS & CLOUD -->
+
+        <div class="skill-category">
+
+            <h4>
+                DevOps & Cloud Systems
+            </h4>
+
+            <div class="skill-tags">
+
+                <span class="skill">Linux (Ubuntu)</span>
+                <span class="skill">Bash</span>
+                <span class="skill">Git</span>
+
+                <span class="skill">Docker</span>
+                <span class="skill">Jenkins</span>
+                <span class="skill">GitHub Actions</span>
+
+                <span class="skill">CI/CD</span>
+                <span class="skill">AWS S3</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- DATABASES & DATA -->
+
+        <div class="skill-category">
+
+            <h4>
+                Databases & Data Systems
+            </h4>
+
+            <div class="skill-tags">
+
+                <span class="skill">PostgreSQL</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">SQL</span>
+
+                <span class="skill">Redis</span>
+                <span class="skill">WebSockets</span>
+                <span class="skill">Data Integration</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- AI & ENGINEERING -->
+
+        <div class="skill-category">
+
+            <h4>
+                AI, Testing & Engineering
+            </h4>
+
+            <div class="skill-tags">
+
+                <span class="skill">Machine Learning</span>
+                <span class="skill">Computer Vision</span>
+                <span class="skill">YOLO</span>
+
+                <span class="skill">Postman</span>
+                <span class="skill">Swagger / OpenAPI</span>
+
+                <span class="skill">SonarQube</span>
+                <span class="skill">Prometheus</span>
+                <span class="skill">Grafana</span>
+
+                <span class="skill">Debugging</span>
+                <span class="skill">Troubleshooting</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section id="experience" class="section">
+
+    <h3 class="section-title">
+        Work Experience
+    </h3>
+
+
+    <!-- MEDICO -->
+
+    <div class="experience-card">
+
+        <div class="card-header">
+
+            <h4>
+                Software Engineer — End-of-Studies Project
+            </h4>
+
+            <span class="company">
+                Medico International Services • Tunis, Tunisia
+            </span>
+
+            <span class="date">
+                2025
+            </span>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <strong>Full-Stack Development:</strong>
+                Developed a digital healthcare platform using
+                <strong>Angular</strong> and
+                <strong>Django REST Framework</strong>, implementing
+                JWT-based authentication, PostgreSQL data models,
+                user management, scheduling, and treatment workflows.
+            </li>
+
+            <li>
+                <strong>Real-Time & Cloud Integration:</strong>
+                Implemented real-time messaging and notifications using
+                <strong>Django Channels, WebSockets, and Redis</strong>,
+                with <strong>AWS S3</strong> for media storage.
+            </li>
+
+            <li>
+                <strong>AI & Reliability:</strong>
+                Integrated a computer vision feature using
+                <strong>YOLO</strong>, performing API testing,
+                debugging, and validation to ensure reliable
+                application behavior.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- IC CANADA -->
+
+    <div class="experience-card">
+
+        <div class="card-header">
+
+            <h4>
+                Software Engineering Intern
+            </h4>
+
+            <span class="company">
+                IC CANADA • Remote / Tunis
+            </span>
+
+            <span class="date">
+                2024
+            </span>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <strong>ERP Platform Engineering:</strong>
+                Developed frontend components in
+                <strong>Angular</strong> and backend REST APIs in
+                <strong>Django</strong> for a BI and ERP platform.
+            </li>
+
+            <li>
+                <strong>Data Integration:</strong>
+                Worked with relational SQL data and business data flows
+                supporting reporting requirements and data consistency.
+            </li>
+
+            <li>
+                <strong>Agile Collaboration:</strong>
+                Participated in requirements analysis, debugging,
+                troubleshooting, and resolution of technical issues.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROJECTS
+========================================================= -->
+
+<section id="projects" class="section">
+
+    <h3 class="section-title">
+        Key Projects
+    </h3>
+
+    <div class="projects-grid">
+
+
+        <!-- MEDICO PROJECT -->
+
+        <div class="project-card">
+
+            <h4>
+                Medico — AI-Powered Medical Platform
+            </h4>
+
+            <p class="project-tech">
+                Angular • Django REST Framework • PostgreSQL • WebSockets • Redis • YOLO
+            </p>
+
+            <p>
+                Full-stack healthcare platform combining clinical workflows,
+                real-time communication, medical data management, and
+                AI-powered image analysis using YOLO.
+            </p>
+
+            <a
+                href="https://github.com/Nidhaldal/Medico"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+            >
+                View Project on GitHub →
+            </a>
+
+        </div>
+
+
+        <!-- BI MANAGEMENT -->
+
+        <div class="project-card">
+
+            <h4>
+                Business Intelligence & ERP Platform
+            </h4>
+
+            <p class="project-tech">
+                Angular • Django • Python • TypeScript • SQL
+            </p>
+
+            <p>
+                BI and ERP platform integrating frontend applications,
+                backend services, relational data, and business workflows
+                for structured reporting and data management.
+            </p>
+
+            <a
+                href="https://github.com/Nidhaldal/BI-management"
+                target="_blank"
+                rel="noopener"
+                class="project-link"
+            >
+                View Project on GitHub →
+            </a>
+
+        </div>
+
+
+        <!-- CARPOOLING -->
+
+        <div class="project-card">
+
+            <h4>
+                Colocation & Carpooling Platform
+            </h4>
+
+            <p class="project-tech">
+                Spring Boot • Angular • REST APIs
+            </p>
+
+            <p>
+                Developed a full-stack platform for carpooling and
+                colocation, implementing user management, matching,
+                reservation workflows, and REST API integration.
+            </p>
+
+        </div>
+
+
+        <!-- DEVOPS -->
+
+        <div class="project-card">
+
+            <h4>
+                DevOps & QA Automation Pipeline
+            </h4>
+
+            <p class="project-tech">
+                Jenkins • Docker • GitHub Actions • SonarQube • Postman • Prometheus • Grafana
+            </p>
+
+            <p>
+                Designed CI/CD workflows with Jenkins and GitHub Actions,
+                integrating automated testing and code quality analysis
+                using SonarQube and Postman. Added application monitoring
+                and observability with Prometheus and Grafana.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LEADERSHIP
+========================================================= -->
+
+<section id="leadership" class="section">
+
+    <h3 class="section-title">
+        Leadership & Community
+    </h3>
+
+
+    <!-- DEEPFLOW -->
+
+    <div class="leadership-card">
+
+        <h4>
+            Chairman — DeepFlow AI Club
+        </h4>
+
+        <span class="company">
+            ESPRIT • 2023–2024
+        </span>
+
+        <p>
+            Led an AI-focused student organization and coordinated
+            technical workshops and machine learning initiatives.
+            Organized the AI HackFlow 2.0 event at the City of Sciences
+            Tunis, coordinating speakers, participants, workshops,
+            and logistics.
+        </p>
+
+    </div>
+
+
+    <!-- IPEIT -->
+
+    <div class="leadership-card">
+
+        <h4>
+            Chairman — IPEIT Club
+        </h4>
+
+        <span class="company">
+            2021
+        </span>
+
+        <p>
+            Led student initiatives and organized the
+            "Road to 5.0" event focused on Artificial Intelligence
+            and Industry 5.0.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section id="education" class="section">
+
+    <h3 class="section-title">
+        Education
+    </h3>
+
+    <div class="education-grid">
+
+        <div class="edu-item">
+
+            <h4>
+                Software Engineering
+            </h4>
+
+            <p>
+                ESPRIT — Ecole Supérieure Privée d'Ingénierie
+                et de Technologies
+            </p>
+
+            <span class="date">
+                2022 – 2025
+            </span>
+
+        </div>
+
+
+        <div class="edu-item">
+
+            <h4>
+                Physics & Chemistry Preparatory Studies
+            </h4>
+
+            <p>
+                IPEIT — Institut Préparatoire aux Études
+                d'Ingénieurs de Tunis
+            </p>
+
+            <span class="date">
+                2019 – 2022
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- LANGUAGES -->
+
+    <div class="languages-box">
+
+        <h4>
+            Languages
+        </h4>
+
+        <p>
+            <strong>English:</strong> Fluent (C2)
+            &nbsp;|&nbsp;
+
+            <strong>French:</strong> B2
+            &nbsp;|&nbsp;
+
+            <strong>Arabic:</strong> Native
+            &nbsp;|&nbsp;
+
+            <strong>Spanish:</strong> Basic
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact" class="section contact-section">
+
+    <h3 class="section-title">
+        Get In Touch
+    </h3>
 
     <p>
-        I specialize in backend systems, ERP and BI platforms, workflow automation, and full-stack applications that connect business processes with scalable software architectures.
+        I'm open to junior software engineering opportunities,
+        particularly full-stack, backend, AI, and systems-oriented roles.
     </p>
+
+    <div class="contact-links">
+
+        <a
+            href="mailto:nidhal.dalhoumi@esprit.tn"
+            class="contact-item"
+        >
+            📧 nidhal.dalhoumi@esprit.tn
+        </a>
+
+
+        <a
+            href="https://github.com/Nidhaldal"
+            target="_blank"
+            rel="noopener"
+            class="contact-item"
+        >
+            🐙 github.com/Nidhaldal
+        </a>
+
+
+        <a
+            href="https://www.linkedin.com/in/nidhal-dalhoumi-1b4a721a6/"
+            target="_blank"
+            rel="noopener"
+            class="contact-item"
+        >
+            💼 linkedin.com/in/nidhal-dalhoumi
+        </a>
+
+    </div>
+
+
+    <a
+        href="assets/Nidhal_Dalhoumi_CV.pdf"
+        class="btn primary-btn download-cv-btn"
+        target="_blank"
+        rel="noopener"
+    >
+        📄 Download Full Resume
+    </a>
+
 </section>
 
-<!-- LEADERSHIP -->
-<section>
-    <h3>Leadership</h3>
+</main>
 
-    <h4>DeepFlow AI Club - Chairman</h4>
 
-    <p>
-        Led AI workshops and organized a national hackathon connecting students, speakers, and industry professionals.
-    </p>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <h3>Contact</h3>
-
-    <p>Email: <a href="mailto:nidhal.dalhoumi@esprit.tn">nidhal.dalhoumi@esprit.tn</a></p>
-
-    <p>GitHub: <a href="https://github.com/NidhalDal">github.com/NidhalDal</a></p>
-
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/nidhal-dalhoumi-1b4a721a6/" target="_blank">
-        linkedin.com/in/nidhal-dalhoumi
-    </a></p>
-
-    <a href="assets/Nidhal_Dalhoumi_CV.pdf" class="cv-btn" target="_blank">Download CV</a>
-</section>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer>
-    <p>© 2026 Nidhal Dalhoumi</p>
+
+    <p>
+        © 2026 Nidhal Dalhoumi • Built with HTML, CSS & JavaScript
+    </p>
+
 </footer>
 
+
 <script src="script.js"></script>
+
 </body>
+
 </html>
